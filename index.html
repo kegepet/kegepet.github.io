@@ -1,12 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>keith petrino // developer</title>
+<title>keith petrino // organism</title>
+<style>
+#organism {
+  width: 200px;
+  height: 314px;
+  background-image: url('./kepe-org.png');
+  background-repeat: no-repeat;
+}
+</style>
 <head>
-<meta http-equiv="refresh" content="0;URL=https://github.com/kegepet">
-</head>
 </head>
 <body>
-
+<div id="organism"></div>
+<div id="hireme">Web developer specializing in client-side javascript as well as Node.js. Skills include:
+<ul>
+<li></li>
+</ul>
+Contact me at <span class="mailto-fairy"></span></div>
+<script>
+// mailto fairy
+var u = 'io';
+var h = 'kepe.org';
+var i = document.querySelector('#hireme');
+var a = document.createElement('a');
+a.setAttribute('href', 'mailto:' + u + '@' + h);
+a.appendChild(document.createTextNode(u + '@' + h));
+var r = document.createRange();
+r.selectNode(document.querySelector('.mailto-fairy'));
+r.insertNode(a);
+</script>
 </body>
 </html>
