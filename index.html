@@ -8,7 +8,7 @@
 body {
   font-family: 'PT Sans Narrow';
   font-size: 16px;
-  background-color: #ffedfa;
+  background-color: #f2ebde;
 }
 body > * {
   width: 300px;
@@ -25,20 +25,7 @@ body > * {
 </head>
 <body>
 <div id="organism"></div>
-<div id="main"><p>An organism's only responsibilities are to survive and reproduce. And although I've so far only been able to manage the first, that's only because I'm so busy being a designer and developer specializing in vanilla javascript, Node.js, <a href="http://electron.atom.io/" target="_blank">Github's Electron framework</a> (for building desktop applications using Javascript), Chrome apps and extensions, shell scripting, and more.</p><p>If you need a developer who can (and prefers to) build things from scratch, without external frameworks, such as JQuery, I'm available for hire on a contract basis.</p><p>Contact me at <span class="mailto-fairy"></span>.</p><p>Also, feel free to look through some of the projects on <a href="https://github.com/kepedev">my github page</a>.</p></div>
-<script>
-// mailto fairy
-var u = 'io';
-var h = 'kepe.org';
-var a = document.createElement('a');
-a.setAttribute('href', 'mailto:' + u + '@' + h);
-a.appendChild(document.createTextNode(u + '@' + h));
-var r = document.createRange();
-var mf = document.querySelectorAll('.mailto-fairy');
-mf.forEach(function (item) {
-  r.selectNode(item);
-  r.insertNode(a.cloneNode(true));
-});
-</script>
+<div id="main"><p>An organism's only responsibilities are to survive and reproduce. And although I've so far only been able to manage the first, that's only because I'm so busy being a designer and developer specializing in vanilla javascript, Node.js, <a href="http://electron.atom.io/" target="_blank">Github's Electron framework</a> (for building desktop applications using Javascript), Chrome apps and extensions, shell scripting, and more.</p><p>If you need a developer who can (and prefers to) build things from scratch, without external frameworks, such as JQuery, I'm available for hire on a contract basis.</p><p>Contact me at <span data-mailto-fairy='{"user":"io","host":"kepe.org"}'></span>.</p><p>Also, feel free to look through some of the projects on <a href="https://github.com/kepedev">my github page</a>.</p></div>
+<script src="mailto-fairy.js"></script>
 </body>
 </html>
