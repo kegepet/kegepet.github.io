@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #f2f2f2;
+  background-image: url('./kepe-bg.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+ }
+ .content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 400px;
+  height: 500px;
+  padding: 0 15px;
+ }
+ .content::first-child {
+  border-right: solid 3px #497db2;
+ }
+</style>
+<noscript>
+<style>
+
+</style>
+</noscript>
+</head>
+<body>
+<!-- this'll only show for mobile devices; pointless for normal screen sizes. -->
+<div id="nav">
+
+</div>
+<!-- something about me and how to reach me -->
+<div class="content" id="about"><p>An organism's only responsibilities are to survive and reproduce. And although I've so far only been able to manage the first, that's only because I'm so busy being a  developer specializing in vanilla javascript, Node.js, Python, Chrome apps and extensions, shell scripting, and more.</p><p>If you need a developer who can (and prefers to) build things from scratch, without unnecessary frameworks, I'm available for hire on a contract basis.</p><p>Contact me at <span data-mailto-fairy='{"user":"kepe","host":"kepe.org"}'></span>.</p></div>
+<!-- no point in doing a portfolio when github and others do it for you. just link to them. -->
+<div class="content" id="projects">
+These sites tell it better:
+<ul>
+<li><a href="https://github.com/kegepet">my github</a></li>
+<li><a href="https://gist.github.com/kegepet">my gist</a></li>
+<li><a href="https://npmjs.org/~kegepet"></a>my npm</li>
+</ul>
+</div>
+<script src="mailto-fairy.js"></script>
+<script>
+
+</script>
+</body>
+</html>
