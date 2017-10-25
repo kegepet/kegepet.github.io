@@ -2,6 +2,7 @@
 <html>
 <head>
 <title>keith petrino, organism</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
   font-family: monospace;
@@ -24,6 +25,7 @@ pre {
   float: left;
   margin: 0 1em 0 0;
 }
+
 p {
   margin: 0 0 1.4em;
   padding: 0;
@@ -34,26 +36,43 @@ ul {
   padding: 0;
   list-style: none;
 }
-ul li:before {
+li:before {
   content: '+ ';
 }
 
-@media screen and (orientation: portrait) {
-  
-  body {
-    padding: 1% 5%;
-  }
+/* for portrait smartphones */
+@media only screen and (max-width: 599px) {
   
   #main {
     width: 100%;
   }
   
   pre {
-    font-size: 2.9em;
-    line-height: 1.2em;
+    font-size: 1.5em;
+    line-height: 1.1em;
     margin: 0 1.2em 0 0;
   }
-  
+}
+
+/* for landscape smartphones or portrait tablets */
+@media screen and (min-width: 600px) and (orientation: portrait),
+screen and (max-height: 500px) and (orientation: landscape) {
+
+  #main {
+    width: 80%;
+  }
+  #pre {
+    font-size: 1.5em;
+    line-height: 1.1em;
+    margin: 0 1.2em 0 0;
+  }
+}
+/* for landscape tablets */
+@media screen and (min-resolution: 150dpi) and (min-height: 500px) and (orientation: landscape) {
+  #main {
+    font-size: 1.2em;
+    width: 60%;
+  }
 }
 </style>
 </head>
